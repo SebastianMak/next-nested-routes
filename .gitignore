@@ -1,2 +1,17 @@
+  
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+# Let the setup task manage these
+
+# dependencies
 /node_modules
+
+# production
+/build
+/dist
 /.next
+
+# misc
+.DS_Store
+yarn-debug.log*
+yarn-error.log*
+server.log

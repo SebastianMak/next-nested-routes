@@ -1,21 +1,20 @@
 import Link from 'next/link';
 import { withRouter } from 'next/router';
 
-const Home = ({ router }) => {
-  const { route } = router;
+const Home = () => {
   return (
     <>
       <h1>Home page</h1>
-      <Link href={`${route}/about`}>
+      <Link href="/app/about">
         <a>About page</a>
       </Link>
       <br />
-      <Link href={`${route}/contact`}>
-        <a>contact page</a>
+      <Link href="/app/counter">
+        <a>counter page</a>
       </Link>
       <br />
-      <Link href={`${route}/projects`}>
-        <a>projects page</a>
+      <Link href="/app/images">
+        <a>images page</a>
       </Link>
       <br />
     </>
